@@ -3,20 +3,20 @@ import subprocess
 from datetime import datetime, timedelta
 
 # Start date for the graph
-start_date = datetime(2024, 7, 1)  # First day of the year
+start_date = datetime(2024, 11, 1)  # Start from the first day of the year
 
-# Cat face pattern
+# Pac-Man pattern
 pattern = [
-    "0001000",
-    "0011100",
-    "0111110",
-    "0101010",
-    "0111110",
-    "0011100",
-    "0001000",
+    "0000222",
+    "0002222",
+    "0022200",
+    "0222220",
+    "0222220",
+    "0022200",
+    "0000000",
 ]
 
-# Loop over the pattern to make commits
+# Loop through the pattern to make commits
 for row_index, row in enumerate(pattern):
     for col_index, cell in enumerate(row):
         if cell == "1":  # Make a commit for "1" cells
